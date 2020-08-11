@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "364886948317",
+    "firebase_url": "https://foodonmood-9a512.firebaseio.com",
+    "project_id": "foodonmood-9a512",
+    "storage_bucket": "foodonmood-9a512.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364886948317:android:92fb3c005a37d91b64de34",
+        "android_client_info": {
+          "package_name": "co.zeiq.foodonmood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364886948317-lg00lpv9krbt0n5dsslee4njomds6deu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuwmHAckT0dY3eqTacQ_AeiBoyw_j-aEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364886948317-lg00lpv9krbt0n5dsslee4njomds6deu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

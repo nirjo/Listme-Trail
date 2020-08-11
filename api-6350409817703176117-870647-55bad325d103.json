@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-6350409817703176117-870647",
+  "private_key_id": "55bad325d103b6cfdbded4b03014013ff3cc5fa7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDcJQ2E5gSmM1Ro\noSxJLRPgiKeloo1dcUG3A1AlmmoRZq+APb82rIYzJBldbiidxm7ZnS0B8kG7UEwD\n3AvKMZfP210FbnFyEL0REF3hImyBuyDV613M1UfzNrnxr3Ftmpzy9QNRmVX9j3fT\nGi86d2VJ52dMuQpHI6UE/zfQKlnO5zvuT+oEYXMK6QGRRY3iWlxcHwLwSXGYx1T/\nVhJ9pJkyNFs0ZqXFmPXsPzM7YCwV25g4b+iNlWo+5M9Pg8w3hEDLb7YvbEc1nGFw\nAkIGsHXB6B0pCGsFLJAbzhlEW+UlgaTkJKTlghLlGpRT3ES7wjFSYZakjveHcub8\nTY99Is0bAgMBAAECggEACDpUlQWSqulENzhRLo5mwBHkmQY2AKqiICHQbMCCIBKn\n2/rgiKtyoJYfYkki3TK9teGUj6CiBN1bIxrvK5YBx/hwWCrERrCKCZvNj5X47V80\nzPe2Lg+uDr51vT1L/EdJEmprB+hJOQyT81ebepA30uuUmIN+iWqzWRObJ9jfp4+o\nS4zZz/BxuPmSur4tV8hyeoyDxmGBS4DAbFwIriUiVQcMBfvoxTErAAjkQruKqnID\nRrYg7ufgIW7lPIm1fvx/1FXq49aJ4ypo9sPDw7Xq56VbJ4Fan3EMLRN3iRxFPb/n\ndUBURqojVr2YJiU8ZAyIOmUBCbBGEQMJlGg8U42rMQKBgQD0a9oa6G8XyNGFSNxO\n0h/172vh6BxY0jmlU2d3QOJX/hlTFlnESFJRYqYdZNo7B7qkyloARGWL0f83AbMF\nOBkkTZnYz4untCx3wuJzNFvR59YzfKHOD4Dh8zyJRQR8nTEb8ShgYLU4JjCsBgt8\n1aorwMi1fUAWADx1x/ltBfM5RwKBgQDmkss/sWAKyILHHKEjNQJaZ+heGBPthVTt\nhHeuF0XF8xK1xZvHAb8kdOK41Gx5Ik297sKKzUSiLZLPN9u7m5AkvE02FnqGyBZn\nvzQl1Q0l0tD4e/FVt5+oBiVmqz4jjQ/wPNq5JGy7HtmKRLZjId566nwQJHQkuxXr\n17fxkzI3jQKBgE1Xu4J8PnsmPraQYbZHY3mtM1Qe4KlyjG82Py1LSNRTQaw7DFjC\nEdpS/wGaIjw/q93tciFXg1KFNt8vGHj0UXBdZetncWe16cRT1NhjnxKC7BMKwyCz\nYzMchvFg95R/IUUYQJCOyYlk/E3S89uiuOBzdo+HfLn5hSg4CUNoeJiNAoGAThui\nQKRczapZKwxWxe96KZgTjnSHo6nMOF3skQwPNdx/FRapC8RatQXnnAdR68MkJNhS\nDOU2f94CYrIgfLBZJyim21DIFwqHFIQgLUS8HHkLE3IhMhFvQ2M5nksaVL6/jHmA\n+sENGGJ9/SoDwxdBH9B5UJqYwayi428DQBHGLC0CgYEA44+dsZimOE8Xj8ALhNbT\nMCkQn9xDworwNP9Z20v9buWHcOLk7LqxQxy0DrEH8BMXolrTA7C8rgIXHkf38duk\nLzbRdGQTzmpNgyk/pZwZQvEZsyY+JbMi1frZS5Uz9aPT/YtX7fcwSCxRheSdpi6y\nBmvlMpMXDmpOzmAhQYOCAj8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "expo-app@api-6350409817703176117-870647.iam.gserviceaccount.com",
+  "client_id": "102891483665448598204",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/expo-app%40api-6350409817703176117-870647.iam.gserviceaccount.com"
+}

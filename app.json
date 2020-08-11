@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "listme-bouncer",
+    "slug": "listme-bouncer",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.7",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "co.zeiq.listmebouncer",
+      "buildNumber": "1.0.2"
+    },
+    "android": {
+      "package": "co.zeiq.listmebouncer",
+      "versionCode": 7,
+      "googleServicesFile": "./google-services.json"
+    },
+    "description": ""
+  }
+}
