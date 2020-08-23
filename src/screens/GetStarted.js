@@ -88,7 +88,6 @@ const GetStarted = ({ navigation }) => (
           }}
         />
       </SignupBox>
-      <Bottom></Bottom>
     </Container>
   </Layout>
 );
