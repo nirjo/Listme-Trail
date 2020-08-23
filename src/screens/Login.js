@@ -17,7 +17,7 @@ const Container = styled.View`
 `;
 const Top = styled.View`
   flex: 1;
-  justify-content: flex-end;
+  justify-content: center;
   padding-horizontal: 50;
   padding-bottom: 15;
 `;
@@ -84,13 +84,13 @@ const Login = ({ navigation }) => {
     setTimeout(() => navigation.navigate('AllowNotifications'), 100);
   };
   // f1() =>{};
-   	
-// onFocus={() =>console.log("focus received" ) }
-          // onBlur={() => console.log("focus lost") } 
+
+  // onFocus={() =>console.log("focus received" ) }
+  // onBlur={() => console.log("focus lost") }
   return (
     <Layout>
       <Container>
-        {/*<Top isKeyboardActive={isKeyboardActive}>
+        {/* <Top isKeyboardActive={isKeyboardActive}>
          
           <TextStyled semibold size="medium">
             Log In
@@ -98,22 +98,20 @@ const Login = ({ navigation }) => {
           <LoginText size="small" center>
             Enter your login details to access your account
           </LoginText>
-        </Top>*/}
+        </Top> */}
         <Middle isKeyboardActive={isKeyboardActive}>
           <FadeInAnimation duration={800}>
             <LoginEmailForm
               loading={loading}
               handleSubmit={handleSubmit}
               navigation={navigation}
-              
             />
-			
-			{/* hasForgotOption
+
+            {/* hasForgotOption
             />
 			*/}
-			
-			
-			{/*
+
+            {/*
             <RegisterText
               size="small"
               onPress={() => navigation.navigate('Register')}

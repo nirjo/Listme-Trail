@@ -4,7 +4,7 @@ const lightShades = '#F9FBFC';
 
 const theme = {
   lightShades: '#FFFFFF',
-  primaryColor: '#b7007b',
+  primaryColor: '#00a4eb',
   mainBrandColor: '#2D0C57',
   secondaryColor: '#ffd102',
   liteAccent: '#CDB8D3',
@@ -15,12 +15,14 @@ const theme = {
   textBlue: '#00a4eb',
   textGrey: '#9B9B9B',
   textColorAlt: '#FEFEFE',
+  textColorAltB: '#b7007b',
+
   backgroundColor: '#ffffff',
   fontFamily: 'Rubik',
   fontSizeExtraSmall: 11,
   fontSizeSmall: 14,
   fontSize: 16,
-  fontSizeMedium: 22,
+  fontSizeMedium: 18,
   fontSizeLarge: 30,
   fontSizeExtraLarge: 32,
   shadowColor: 'rgba(0, 0, 0, 0.1)',

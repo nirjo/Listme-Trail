@@ -1,20 +1,13 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Platform } from 'react-native';
-import styled from 'styled-components/native';
-
-import theme, { boxShadow } from '../../utils/theme';
+import styled from 'styled-components';
+import theme from '../../utils/theme';
 import ButtonPressAnimation from './ButtonPressAnimation';
 import Text from './Text';
 
 const Container = styled(ButtonPressAnimation)`
-  background-color: ${props =>
-    props.bgColor ? props.bgColor : props.theme.mainBrandColor};
-  border-radius: 8;
-  border-width: 1;
-  border-color: ${props => props.theme.primaryColor};
-  opacity: ${props => (props.isLoading || props.disabled ? 0.75 : 1)};
-  height: ${props => props.height || '55'};
+  height: ${props => props.height || '45'};
   justify-content: center;
 `;
 
