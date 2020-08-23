@@ -1,16 +1,30 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import { ImageBackground, StyleSheet } from 'react-native';
 
-import { Text, Image, Button } from '../components/elements';
+import { Button } from '../components/elements';
 import Layout from '../components/Layout';
-import logoImg from '../assets/images/logo.png';
 
+import homeBg from '../assets/images/homeBg.png';
+
+const styles = StyleSheet.create({
+  imageContainer: {
+    flex: 1,
+    width: 375,
+    height: 804,
+    left: 0,
+    top: 0,
+  },
+});
+const ButtonContainer = styled.View`
+  padding-top: 20;
+`;
 const Container = styled.View`
   flex: 1;
   background-color: ${props => props.theme.lightShades};
 `;
 const Top = styled.View`
-  flex: 1.4;
+  flex: 2.5;
   justify-content: center;
 `;
 
@@ -19,44 +33,30 @@ const Middle = styled.View`
   flex: 1;
   padding-horizontal: 20;
 `;
-
-const Logo = styled(Image)`
-  margin-top: 250;
-  margin-bottom: 20;
-  align-self: center;
-`;
-
-const SignInLabel = styled(Text)`
-  margin-top: 25;
-  margin-bottom: 5;
-`;
-const SignInText = styled(Text)`
-  color: ${props => props.theme.textBlue};
-`;
-
 const GetStarted = ({ navigation }) => (
   <Layout>
     <Container>
       <Top>
-        {/* <Logo source={logoImg} width={200} height={130} /> */}
+        <ImageBackground source={homeBg} style={styles.imageContainer} />
       </Top>
+
       <Middle>
-        <Button
-          title="Get Started"
-          onPress={() => {
-            navigation.navigate('Register');
-          }}
-        />
-        <SignInLabel center>Already have an account</SignInLabel>
-        <SignInText
-          center
-          bold
-          onPress={() => {
-            navigation.navigate('Login');
-          }}
-        >
-          Sign In
-        </SignInText>
+        <ButtonContainer>
+          <Button
+            title="Log In"
+            onPress={() => {
+              navigation.navigate('Login');
+            }}
+          />
+        </ButtonContainer>
+        <ButtonContainer>
+          <Button
+            title="Sign Up"
+            onPress={() => {
+              navigation.navigate('Register');
+            }}
+          />
+        </ButtonContainer>
       </Middle>
     </Container>
   </Layout>

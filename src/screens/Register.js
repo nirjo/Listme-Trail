@@ -8,7 +8,7 @@ import { useStoreActions } from 'easy-peasy';
 import { Text, Image, FadeInAnimation } from '../components/elements';
 import Layout from '../components/Layout';
 import LoginEmailForm from '../components/forms/LoginEmailForm';
-// import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.png';
 
 const Container = styled.View`
   background-color: ${props => props.theme.lightShades};

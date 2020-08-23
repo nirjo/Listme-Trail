@@ -9,7 +9,7 @@ import { useStoreActions } from 'easy-peasy';
 import { Text, Image, FadeInAnimation } from '../components/elements';
 import Layout from '../components/Layout';
 import LoginEmailForm from '../components/forms/LoginEmailForm';
-// import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.png';
 
 const Container = styled.View`
   flex: 1;
@@ -83,33 +83,44 @@ const Login = ({ navigation }) => {
     setUser(loginRes.user);
     setTimeout(() => navigation.navigate('AllowNotifications'), 100);
   };
-
+  // f1() =>{};
+   	
+// onFocus={() =>console.log("focus received" ) }
+          // onBlur={() => console.log("focus lost") } 
   return (
     <Layout>
       <Container>
-        <Top isKeyboardActive={isKeyboardActive}>
-          {/* <LogoLite source={logo} width={110} height={100} /> */}
+        {/*<Top isKeyboardActive={isKeyboardActive}>
+         
           <TextStyled semibold size="medium">
             Log In
           </TextStyled>
           <LoginText size="small" center>
             Enter your login details to access your account
           </LoginText>
-        </Top>
+        </Top>*/}
         <Middle isKeyboardActive={isKeyboardActive}>
           <FadeInAnimation duration={800}>
             <LoginEmailForm
               loading={loading}
               handleSubmit={handleSubmit}
               navigation={navigation}
-              hasForgotOption
+              
             />
+			
+			{/* hasForgotOption
+            />
+			*/}
+			
+			
+			{/*
             <RegisterText
               size="small"
               onPress={() => navigation.navigate('Register')}
             >
               Create account
             </RegisterText>
+			*/}
           </FadeInAnimation>
         </Middle>
       </Container>

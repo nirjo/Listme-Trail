@@ -3,8 +3,8 @@ import { Platform } from 'react-native';
 const lightShades = '#F9FBFC';
 
 const theme = {
-  lightShades: '#F6F5F5',
-  primaryColor: '#00a4eb',
+  lightShades: '#FFFFFF',
+  primaryColor: '#b7007b',
   mainBrandColor: '#2D0C57',
   secondaryColor: '#ffd102',
   liteAccent: '#CDB8D3',

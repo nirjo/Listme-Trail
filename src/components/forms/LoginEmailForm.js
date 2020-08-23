@@ -6,12 +6,16 @@ import { useTranslation } from 'react-i18next';
 
 import { Button, TextInput, Text } from '../elements';
 
-const Container = styled.View``;
+const Container = styled.View`
+	flex-direction: column ;
+  
+`;
 
 const InputContainer = styled.View`
   border-radius: 4;
   padding-bottom: 15;
   padding-horizontal: 15;
+  margin-top: 50;
 `;
 
 const InputFirst = styled(TextInput)`
@@ -19,12 +23,29 @@ const InputFirst = styled(TextInput)`
   border-color: ${props => props.theme.borderColor};
   border-radius: 4;
   margin-bottom: 15;
+  
+    
+	border:none;
+	border-bottom-width: 2px;
+	border-bottom-color : #f1f3f8;
+	
 `;
 
 const InputSecond = styled(TextInput)`
   border-width: 1;
   border-color: ${props => props.theme.borderColor};
   border-radius: 4;
+  
+	border:none;
+	border-bottom-width: 2px;
+	border-bottom-color : #f1f3f8
+`;
+
+const LoginButton = styled(Button)`
+	align-self: flex-end;
+	position: absolute;
+    bottom:0;
+    left:0;
 `;
 
 const ForgotText = styled.TouchableOpacity`
@@ -51,7 +72,7 @@ const LoginEmailForm = props => {
       <InputContainer>
         <InputFirst
           secondary
-          placeholder="Email"
+          placeholder="Phone Number"
           onChangeText={email => setFieldValue('email', email)}
           value={values.email}
           textContentType="emailAddress"
@@ -63,9 +84,9 @@ const LoginEmailForm = props => {
           autoCorrect={false}
           autoFocus={true}
         />
-        <InputSecond
+		<InputSecond
           secondary
-          placeholder="Your Password"
+          placeholder="Verification Code"
           onChangeText={password => setFieldValue('password', password)}
           value={values.password}
           returnKeyType="go"
@@ -82,11 +103,23 @@ const LoginEmailForm = props => {
           <Text size="small"> Forgot Password?</Text>
         </ForgotText>
       )}
-      <Button
-        title="Continue"
+	  {/*
+	 <Button
+        title="Log In"
         onPress={handleSubmit}
         isLoading={isSubmitting || isLoading || loading}
+		
       />
+	  */}
+	  
+	   
+		<LoginButton
+			 title="Log In"
+			 onPress={handleSubmit}
+			 isLoading={isSubmitting || isLoading || loading}
+		>
+		</LoginButton>
+	  
     </Container>
   );
 };
@@ -95,13 +128,7 @@ const enhancer = withFormik({
     email: '',
     password: '',
   }),
-  validationSchema: yup.object().shape({
-    email: yup
-      .string()
-      .email('Must be valid email')
-      .required('Email address is required.'),
-    password: yup.string().required('Please provide a valid password'),
-  }),
+
   handleSubmit: (values, { setSubmitting, props }) => {
     props.handleSubmit(values);
     setSubmitting(false);
