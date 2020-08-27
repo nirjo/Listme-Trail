@@ -15,25 +15,13 @@ const Container = styled.View`
   flex: 1;
 `;
 const Top = styled.View`
-  flex: 1;
-  justify-content: flex-end;
+  justify-content: center;
   padding-horizontal: 50;
   padding-bottom: 20;
 `;
 const Middle = styled.View`
   flex: ${props => (props.isKeyboardActive ? 1.3 : 1)};
   padding-horizontal: 20;
-`;
-
-const TextStyled = styled(Text)`
-  align-self: center;
-`;
-const SignUpText = styled(TextStyled)`
-  padding-vertical: 10;
-`;
-const LogoLite = styled(Image)`
-  margin-bottom: 10;
-  align-self: center;
 `;
 
 const registerMutation = gql`
@@ -82,12 +70,6 @@ const Register = ({ navigation }) => {
       <Container>
         <Top isKeyboardActive={isKeyboardActive}>
           {/* <LogoLite source={logo} width={110} height={100} /> */}
-          <TextStyled semibold size="medium">
-            Sign Up
-          </TextStyled>
-          <SignUpText center size="small">
-            Enter your register details to create account
-          </SignUpText>
         </Top>
         <Middle isKeyboardActive={isKeyboardActive}>
           <FadeInAnimation duration={800}>

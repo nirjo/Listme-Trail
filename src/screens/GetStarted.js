@@ -1,93 +1,66 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import { ImageBackground, StyleSheet } from 'react-native';
-import LoginButton from '../components/elements/LoginButton';
-import SignupButton from '../components/elements/SignupButton';
-// import { Button } from '../components/elements';
 
+import { Button } from '../components/elements';
 import Layout from '../components/Layout';
+
 import homeBg from '../assets/images/homeBg.png';
+
+// Adding Background image
+// changing button view properties
 
 const styles = StyleSheet.create({
   imageContainer: {
     flex: 1,
+    width: 375,
+    height: 804,
+    left: 0,
+    top: 0,
   },
 });
-const Login = styled.View`
-width: 375px;
-height: 812px;
-
+const ButtonContainer = styled.View`
+  padding-top:10 ;
 `;
-const Group = styled.View`
-  position: absolute;
-  left: 6.4%;
-  right: 6.4%;
-  top: 73.15%;
-  bottom: 20.07%;
-
-  background: #b7007b;
-  border-radius: 5px;
-`;
-
-const LoginBox = styled.View`
-  position: absolute;
-  left: 6.4%;
-  right: 6.4%;
-  top: 73.15%;
-  bottom: 20.07%;
-
-  background: #b7007b;
-  border-radius: 5px;
-`;
-const SignupBox = styled.View`
-  position: absolute;
-  left: 6.4%;
-  right: 6.4%;
-  top: 82.27%;
-  bottom: 10.96%;
-
-  border: 1px solid #b7007b;
-  border-radius: 5px;
-`;
-
 const Container = styled.View`
   flex: 1;
-  width: 375px;
-  height: 812px;
+  background-color: ${props => props.theme.lightShades};
+`;
+const Top = styled.View`
+  flex: 2.5;
+  justify-content: center;
 `;
 
-const Bottom = styled.View`
-  position: absolute;
-  left: 32.27%;
-  right: 32%;
-  top: 98.4%;
-  bottom: 0.99%;
-
-  background: #ffffff;
-  border-radius: 100px;
+const Middle = styled.View`
+  padding-top: 30;
+  flex: 1;
+  padding-horizontal: 20;
 `;
 
 const GetStarted = ({ navigation }) => (
   <Layout>
     <Container>
-      <ImageBackground source={homeBg} style={styles.imageContainer} />
-      <LoginBox>
-        <LoginButton
-          title="Log In"
-          onPress={() => {
-            navigation.navigate('Login');
-          }}
-        />
-      </LoginBox>
-
-      <SignupBox>
-        <SignupButton
-          title="Sign Up"
-          onPress={() => {
-            navigation.navigate('Register');
-          }}
-        />
-      </SignupBox>
+      <Top>
+        <ImageBackground source={homeBg} style={styles.imageContainer} />
+      </Top>
+      <Middle>
+        <ButtonContainer>
+          <Button
+            title="Log In"
+            onPress={() => {
+              navigation.navigate('Login');
+            }}
+          />
+        </ButtonContainer>
+        <ButtonContainer>
+          <Button
+            title="Sign Up"
+            onPress={() => {
+              navigation.navigate('Register');
+            }}
+          />
+        </ButtonContainer>
+      </Middle>
     </Container>
   </Layout>
 );

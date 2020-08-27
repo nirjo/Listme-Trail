@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { withFormik } from 'formik';
 import * as yup from 'yup';
 import styled from 'styled-components/native';
@@ -7,8 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { Button, TextInput, Text } from '../elements';
 
 const Container = styled.View`
-	flex-direction: column ;
-  
+  flex-direction: column;
 `;
 
 const InputContainer = styled.View`
@@ -23,29 +23,26 @@ const InputFirst = styled(TextInput)`
   border-color: ${props => props.theme.borderColor};
   border-radius: 4;
   margin-bottom: 15;
-  
-    
-	border:none;
-	border-bottom-width: 2px;
-	border-bottom-color : #f1f3f8;
-	
+
+  border: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #f1f3f8;
+  font-family: Roboto;
 `;
 
 const InputSecond = styled(TextInput)`
   border-width: 1;
   border-color: ${props => props.theme.borderColor};
   border-radius: 4;
-  
-	border:none;
-	border-bottom-width: 2px;
-	border-bottom-color : #f1f3f8
+
+  border: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #f1f3f8;
+  font-family: Roboto;
 `;
 
 const LoginButton = styled(Button)`
-	align-self: flex-end;
-	position: absolute;
-    bottom:0;
-    left:0;
+flex: 1;
 `;
 
 const ForgotText = styled.TouchableOpacity`
@@ -84,7 +81,7 @@ const LoginEmailForm = props => {
           autoCorrect={false}
           autoFocus={true}
         />
-		<InputSecond
+        <InputSecond
           secondary
           placeholder="Verification Code"
           onChangeText={password => setFieldValue('password', password)}
@@ -103,7 +100,7 @@ const LoginEmailForm = props => {
           <Text size="small"> Forgot Password?</Text>
         </ForgotText>
       )}
-	  {/*
+      {/*
 	 <Button
         title="Log In"
         onPress={handleSubmit}
@@ -111,15 +108,12 @@ const LoginEmailForm = props => {
 		
       />
 	  */}
-	  
-	   
-		<LoginButton
-			 title="Log In"
-			 onPress={handleSubmit}
-			 isLoading={isSubmitting || isLoading || loading}
-		>
-		</LoginButton>
-	  
+
+      <LoginButton
+        title="Log In"
+        onPress={handleSubmit}
+        isLoading={isSubmitting || isLoading || loading}
+      ></LoginButton>
     </Container>
   );
 };

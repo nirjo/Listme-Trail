@@ -1,3 +1,5 @@
+/* eslint-disable react/display-name */
+/* eslint-disable no-undef */
 import React from 'react';
 import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -6,7 +8,15 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { Icon, CartBadge } from '../components/elements';
 import theme from '../utils/theme';
 import Splash from './Splash';
-import GetStarted from './GetStarted';
+// import GetStarted from './GetStarted';
+import LoginScreen from './LoginScreen';
+import VerifyScreen from './VerifyScreen';
+import ActiveScreen from './ActiveScreen';
+import AddingNumberScreen from './AddingNumberScreen';
+import AddingSendButtonScreen from './AddingSendButtonScreen';
+import TimerScreen from './TimerScreen';
+import ModalScreen from './ModalScreen';
+
 import Login from './Login';
 import ForgotPassword from './ForgotPassword';
 import Register from './Register';
@@ -25,7 +35,6 @@ import ProfileGender from './ProfileUpdate/Gender';
 import ProfileTelephone from './ProfileUpdate/Telephone';
 import ProfileAddCreditCard from './ProfileUpdate/AddCreditCard';
 
-
 // import Test from './Test';
 
 // eslint-disable-next-line prefer-const
@@ -42,8 +51,15 @@ const navigationOptions = ({ icon, cart }) => {
 };
 
 const LoginStack = createStackNavigator({
-  GetStarted,
+  // GetStarted,
+  LoginScreen,
   Login,
+  VerifyScreen,
+  ActiveScreen,
+  AddingNumberScreen,
+  AddingSendButtonScreen,
+  TimerScreen,
+  ModalScreen,
   ForgotPassword,
   Register,
   AllowNotifications,
